@@ -21,3 +21,9 @@ If you want to learn more about creating good readme files then refer the follow
 
 
 In C# Selenium, explicit waits use `WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));` with expected conditions like `wait.Until(ExpectedConditions.ElementToBeClickable(By.Id("btn")))` for clickable elements, `wait.Until(ExpectedConditions.ElementExists(By.ClassName("content")))` for element presence, `wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//div[@id='modal']")))` for visibility, `wait.Until(ExpectedConditions.TextToBePresentInElement(By.Id("status"), "Complete"))` for text presence, `wait.Until(ExpectedConditions.ElementToBeSelected(By.Id("checkbox")))` for selections, `wait.Until(ExpectedConditions.UrlContains("dashboard"))` for URL conditions, and `wait.Until(ExpectedConditions.TitleContains("Welcome"))` for title conditions. You can also use custom conditions with `wait.Until(driver => driver.FindElements(By.ClassName("item")).Count > 5)` and handle timeouts with try-catch blocks using `WebDriverTimeoutException`, requiring the `DotNetSeleniumExtras.WaitHelpers` NuGet package for ExpectedConditions in newer Selenium versions.
+
+2. Page Object Generator Tools
+
+Katalon Recorder: Records interactions and generates locators automatically
+Selenium IDE: Can export recorded tests with all locators to various formats
+TestComplete: Has smart object identification features
